@@ -21,7 +21,7 @@ body {
     overflow: hidden;
 }
 
-/* Navigation */
+/* -------Navigation Styles------------- */
 
 .navbar {
     position: relative;
@@ -123,7 +123,7 @@ ul li a i {
 
 
 
-/* Responsive  */
+/* -------------Responsive-----------------  */
 
 @media screen and (max-width: 768px) {
     .navbar {
