@@ -125,8 +125,10 @@ ul li a i {
 /* Hero Content Styling */
 .Hero {
     border: 2px solid whitesmoke;
-    position: relative;
-    margin-left: 120px;
+    border-radius: 15px;
+    position: absolute;
+    top: 55px;
+    left: 320px;
 
 }
 
@@ -214,5 +216,12 @@ ul li a i {
         visibility: visible;
         transition: 0.15s ease-out;
     }
+
+ .Hero {
+    right: 200px;
+        left: 120px;
+        top: 55px;
+        width: 260px;
+ }
 
 }
