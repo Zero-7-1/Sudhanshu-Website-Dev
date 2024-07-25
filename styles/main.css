@@ -18,6 +18,7 @@ body {
     background-blend-mode: multiply; 
     background-position: center;
     background-size: cover ;   
+    background-repeat: no-repeat;
     overflow: hidden;
 }
 
@@ -118,6 +119,23 @@ ul li a i {
     display: inline-block;
     margin-right: 2px;
 }
+
+
+
+/* Hero Content Styling */
+.Hero {
+    border: 2px solid whitesmoke;
+    position: relative;
+    margin-left: 120px;
+
+}
+
+
+
+
+
+
+
 
 
 
