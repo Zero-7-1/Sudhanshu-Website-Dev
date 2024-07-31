@@ -2,134 +2,155 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* Normalization CSS Reset */
+/* Removes default browser padding and margins for all elements */
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    font-family: 'poppins';
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    font-family: 'Poppins'; /* Sets a consistent font family across the entire page */
 }
 
-/* Body */
-
+/* Body Styling */
+/* Sets the minimum height of the page to cover the viewport, and applies a background */
 body {
-    min-height: 100vh;
-    background-color: rgba(0, 0, 0, 0.39);
-    background-image: url(../Images/bg.gif);
-    background-blend-mode: multiply; 
-    background-position: center;
-    background-size: cover ;   
-    background-repeat: no-repeat;
-    overflow: hidden;
+    min-height: 100vh; /* Ensures the body is at least as tall as the viewport */
+    background-color: rgba(0, 0, 0, 0.39); /* Dark translucent overlay */
+    background-image: url(../Images/bg.gif); /* Background image for visual appeal */
+    background-blend-mode: multiply; /* Blends the background color with the image */
+    background-position: center; /* Centers the background image */
+    background-size: cover ; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    overflow: hidden; /* Hides overflowing content */
 }
 
-/* -------Navigation Styles------------- */
+/* -------Navigation------------- */
 
+/* Styles for the navigation bar container */
 .navbar {
-    position: relative;
-    background: rgba(254,254,254,0.18);
-    padding: 20px;
-    width: 280px;
-    top: 50px;
-    left: 20px;
-    backdrop-filter: blur(2px);
-    border: 2px solid rgba(254, 254, 254, 0.5);
-    border-radius: 15px;
+    position: relative; /* Positioned relative to its normal flow, allowing for further positioning */
+    background: rgba(254,254,254,0.18); /* Light transparent background */
+    padding: 20px; /* Padding around the content */
+    width: 280px; /* Fixed width for the navbar */
+    top: 50px; /* Moves the navbar 50px down from its normal position */
+    left: 20px; /* Moves the navbar 20px right from its normal position */
+    backdrop-filter: blur(2px); /* Adds a slight blur effect to the background */
+    border: 2px solid rgba(254, 254, 254, 0.5); /* Semi-transparent border */
+    border-radius: 15px; /* Rounded corners for a smooth look */
 }
 
+/* Profile Section Inside Navbar */
+/* Contains profile image and user information */
 .profile {
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;  
-}
-.profile::after {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 2px;
-    background: white;
-    opacity: 0.5;
-    left: 0;
-    bottom: -20px;
-}
-.profile .imagebox {
-    position: relative;
-    height: 80px;
-    width: 80px;
-    border: 2px solid white;
-    border-radius: 50%;
-    overflow: hidden;
-}
-.imagebox img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    position: relative; /* Positioned relative to its normal flow within the navbar */
+    display: flex; /* Flexbox layout for arranging children in a row */
+    width: 100%; /* Occupies full width of the navbar */
+    height: 100%; /* Occupies full height of the navbar */
+    justify-content: space-between; /* Distributes space between child elements */
+    align-items: center; /* Centers items vertically within the container */
+    padding: 20px 0; /* Vertical padding for the profile section */
 }
 
+/* Decorative line below profile content */
+/* Acts as a visual separator */
+.profile::after {
+    position: absolute; /* Positioned absolutely within the profile container */
+    content: '';  /* Empty content, required for pseudo-elements */
+    width: 100%;  /* Full width of the profile container */
+    height: 2px;  /* Thin line */
+    background: white; /* White color for visibility */
+    opacity: 0.5; /* Slight transparency */
+    left: 0; /* Starts at the left edge of the profile container */
+    bottom: -20px; /* Positioned 20px below the bottom of the profile container */
+}
+
+/* Image container inside the profile section */
+.profile .imagebox {
+    position: relative; /* Positioned relative to its normal flow */
+    height: 80px; /* Fixed height for the image box */
+    width: 80px; /* Fixed width for the image box */
+    border: 2px solid white; /* White border around the image */
+    border-radius: 50%; /* Makes the image box circular */
+    overflow: hidden; /* Hides any overflow content */
+}
+
+/* Styling for the image inside the imagebox */
+/* Ensures the image fits properly within the circular container */
+.imagebox img {
+    width: 100%; /* The image covers the full width of the image box */
+    height: 100%; /* The image covers the full height of the image box */
+    object-fit: cover; /* Ensures the image covers the entire box, maintaining aspect ratio */
+}
+
+/* Styling for the heading inside the profile section */
 .heading{
-    color: white
+    color: white; /* White text color */
 }
+
+/* Styles for the main title inside the heading */
 .heading h3 {
-    font-size: 1.15em;
-    font-weight: 500;
+    font-size: 1.15em; /* Slightly larger font size for the main title */
+    font-weight: 500; /* Medium font weight for emphasis */
 }
+
+/* Styles for the subtitle inside the heading */
 .heading h4 {
-    opacity: 0.5;
-    font-size: 1em;
-    font-weight: 400;
+    opacity: 0.5; /* Slight transparency for the subtitle */
+    font-size: 1em; /* Regular font size for the subtitle */
+    font-weight: 400; /* Normal font weight */
 }
 
 /* nav items styling */
+
+/* Styling for the list of navigation items */
 ul {
-    margin-top: 40px;
-
+    margin-top: 40px; /* Adds space above the list */
 }
 
+/* Styling for each list item in the navigation */
 ul li {
-    list-style: none;
-
+    list-style: none; /* Removes default list bullet points */
 }
 
+/* Styling for the links inside each list item */
+/* Defines the appearance and interaction of navigation links */
 ul li a {
-    color: white;
-    font-size: 1.2em;
-    font-weight: 400;
-    display: block;
-    padding: 0 30px;
-    height: 60px;
-    line-height: 60px;
-    text-decoration: none;
-    text-transform: capitalize;
-    border-radius: 8px;
-    transition: .4s .05s ease-out;
-
+    color: white; /* White text color */
+    font-size: 1.2em; /* Slightly larger font size for visibility */
+    font-weight: 400; /* Normal font weight */
+    display: block; /* Makes the link a block element, allowing padding */
+    padding: 0 30px; /* Horizontal padding inside the link */
+    height: 60px; /* Fixed height for each navigation item */
+    line-height: 60px; /* Centers text vertically within the navigation item */
+    text-decoration: none; /* Removes default underline from links */
+    text-transform: capitalize; /* Capitalizes the first letter of each word */
+    border-radius: 8px; /* Rounds the corners of the link */
+    transition: .4s .05s ease-out; /* Smooth transition for hover effects */
 }
 
+/* Hover state for navigation links */
+/* Changes appearance when the user hovers over a link */
 ul li:hover a {
-    color: #333;
-    background: white;
-    transition: 0s ease-out;
+    color: #333; /* Darker text color on hover */
+    background: white; /* White background on hover */
+    transition: 0s ease-out; /* Instant transition for background change */
 }
 
+/* Styling for icons inside navigation links */
+/* Controls the appearance and positioning of icons */
 ul li a i {
-    scale: 1.3;
-    display: inline-block;
-    margin-right: 2px;
+    scale: 1.3; /* Enlarges the icon slightly */
+    display: inline-block; /* Treats the icon as an inline block element */
+    margin-right: 2px; /* Adds space between the icon and text */
 }
-
-
 
 /* Hero Content Styling */
+/* Styles the main content area, typically a large prominent section */
 .Hero {
-    border: 2px solid whitesmoke;
-    border-radius: 15px;
-    position: absolute;
-    top: 55px;
-    left: 320px;
-
+    border: 2px solid whitesmoke; /* Light border around the hero section */
+    border-radius: 15px; /* Rounded corners for the hero section */
+    position: absolute; /* Positioned relative to the nearest positioned ancestor (usually the viewport) */
+    top: 55px; /* Moves the hero section 55px down from the top */
+    left: 320px; /* Moves the hero section 320px from the left edge */
 }
 
 
