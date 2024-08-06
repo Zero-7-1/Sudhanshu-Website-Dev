@@ -1,12 +1,7 @@
-/* This main css file consits commom style codes of Navigation, Body and Footer for all
-pages of the website */
-
+/* This main css file consists of common style codes of Navigation, Body and Footer for all pages of the website */
 
 /* Font Used - Google Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
-
 
 * {
     padding: 0;
@@ -15,23 +10,38 @@ pages of the website */
     font-family: 'Poppins'; /* Sets a consistent font family across the entire page */
 }
 
+/* Wrapper for all content */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the wrapper is at least as tall as the viewport */
+}
+
+/* Main content area */
+.main-content {
+    flex: 1; /* Takes up the remaining space between the header and footer */
+}
+
+/* Footer Styling */
+footer {
+    background: rgba(254,254,254,0.18); /* Light transparent background */
+    text-align: center;
+    color: white;
+    border-top: 2px solid rgba(254, 254, 254, 0.5); /* Semi-transparent top border */
+}
+
 /* Body Styling */
 /* Set the minimum height of the page to cover the viewport, 
-   and applied  a GIF background Image for Home */
-
+   and applied a GIF background Image for Home */
 body {
-    min-height: 100vh; /* Ensures the body is at least as tall as the viewport */
     background-color: rgba(0, 0, 0, 0.39); 
     background-image: url(../Images/bg.gif); 
     background-blend-mode: multiply; /* Blends the background color with the image */
     background-position: center; 
     background-size: cover ; 
     background-repeat: no-repeat; 
-    overflow: hidden; /* Not Scrollable */
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
-
-
-
 
 /* -------Navigation------------- */
 
@@ -92,7 +102,7 @@ body {
 }
 
 /* Styling for the heading inside the profile section */
-.heading{
+.heading {
     color: white; /* White text color */
 }
 
@@ -152,26 +162,6 @@ ul li a i {
     display: inline-block; /* Treats the icon as an inline block element */
     margin-right: 2px; /* Adds space between the icon and text */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* -------------Responsive-----------------  */
 
@@ -246,7 +236,4 @@ ul li a i {
         visibility: visible;
         transition: 0.15s ease-out;
     }
-
-
-
 }
