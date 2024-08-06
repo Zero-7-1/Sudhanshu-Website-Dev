@@ -1,17 +1,17 @@
 /* Used Font Google Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* Normalization CSS Reset */
-/* Removes default browser padding and margins for all elements */
+
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    box-sizing: border-box; 
     font-family: 'Poppins'; /* Sets a consistent font family across the entire page */
 }
 
 /* Body Styling */
-/* Sets the minimum height of the page to cover the viewport, and applies a background */
+/* Set the minimum height of the page to cover the viewport, 
+   and applied  a GIF background Image for Home */
 body {
     min-height: 100vh; /* Ensures the body is at least as tall as the viewport */
     background-color: rgba(0, 0, 0, 0.39); /* Dark translucent overlay */
@@ -152,6 +152,14 @@ ul li a i {
     top: 55px; /* Moves the hero section 55px down from the top */
     left: 320px; /* Moves the hero section 320px from the left edge */
 }
+
+
+
+
+
+
+
+
 
 
 
