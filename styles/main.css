@@ -51,11 +51,12 @@ body {
     background: rgba(254,254,254,0.18); /* Light transparent background */
     padding: 20px; /* Padding around the content */
     width: 280px; /* Fixed width for the navbar */
-    top: 50px; /* Moves the navbar 50px down from its normal position */
+    top: 10px; /* Moves the navbar 10px down from its normal position */
     left: 20px; /* Moves the navbar 20px right from its normal position */
     backdrop-filter: blur(2px); /* Adds a slight blur effect to the background */
     border: 2px solid rgba(254, 254, 254, 0.5); /* Semi-transparent border */
     border-radius: 15px; /* Rounded corners for a smooth look */
+    
 }
 
 /* Profile Section Inside Navbar */
@@ -123,7 +124,7 @@ body {
 
 /* Styling for the list of navigation items */
 ul {
-    margin-top: 40px; /* Adds space above the list */
+    margin-top: 30px; /* Adds space above the list */
 }
 
 /* Styling for each list item in the navigation */
