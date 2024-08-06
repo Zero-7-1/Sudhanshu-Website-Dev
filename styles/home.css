@@ -1,0 +1,21 @@
+/* Hero Content Styling */
+/* Styles the main content area, typically a large prominent section */
+.Hero {
+    border: 2px solid whitesmoke; /* Light border around the hero section */
+    border-radius: 15px; /* Rounded corners for the hero section */
+    position: absolute; /* Positioned relative to the nearest positioned ancestor (usually the viewport) */
+    top: 55px; /* Moves the hero section 55px down from the top */
+    left: 320px; /* Moves the hero section 320px from the left edge */
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+.Hero {
+    right: 200px;
+        left: 120px;
+        top: 55px;
+        width: 260px;
+ }
+}

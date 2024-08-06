@@ -1,5 +1,11 @@
-/* Used Font Google Poppins */
+/* This main css file consits commom style codes of Navigation, Body and Footer for all
+pages of the website */
+
+
+/* Font Used - Google Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 
 
 * {
@@ -12,16 +18,20 @@
 /* Body Styling */
 /* Set the minimum height of the page to cover the viewport, 
    and applied  a GIF background Image for Home */
+
 body {
     min-height: 100vh; /* Ensures the body is at least as tall as the viewport */
-    background-color: rgba(0, 0, 0, 0.39); /* Dark translucent overlay */
-    background-image: url(../Images/bg.gif); /* Background image for visual appeal */
+    background-color: rgba(0, 0, 0, 0.39); 
+    background-image: url(../Images/bg.gif); 
     background-blend-mode: multiply; /* Blends the background color with the image */
-    background-position: center; /* Centers the background image */
-    background-size: cover ; /* Ensures the image covers the entire background */
-    background-repeat: no-repeat; /* Prevents the background image from repeating */
-    overflow: hidden; /* Hides overflowing content */
+    background-position: center; 
+    background-size: cover ; 
+    background-repeat: no-repeat; 
+    overflow: hidden; /* Not Scrollable */
 }
+
+
+
 
 /* -------Navigation------------- */
 
@@ -143,15 +153,6 @@ ul li a i {
     margin-right: 2px; /* Adds space between the icon and text */
 }
 
-/* Hero Content Styling */
-/* Styles the main content area, typically a large prominent section */
-.Hero {
-    border: 2px solid whitesmoke; /* Light border around the hero section */
-    border-radius: 15px; /* Rounded corners for the hero section */
-    position: absolute; /* Positioned relative to the nearest positioned ancestor (usually the viewport) */
-    top: 55px; /* Moves the hero section 55px down from the top */
-    left: 320px; /* Moves the hero section 320px from the left edge */
-}
 
 
 
@@ -246,11 +247,6 @@ ul li a i {
         transition: 0.15s ease-out;
     }
 
- .Hero {
-    right: 200px;
-        left: 120px;
-        top: 55px;
-        width: 260px;
- }
+
 
 }
